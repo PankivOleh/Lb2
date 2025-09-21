@@ -13,20 +13,22 @@ public class Product {
         this.termin = termin;
         this.kilkist = kilkist;
     }
-    public void setValue(int kilkist){
-        this.kilkist = kilkist;
+    public void setValue(int zina){
+        this.zina = zina;
     }
     public int getValue(){
-        return this.kilkist;
+        return this.zina;
     }
+    public int getTermin(){return this.termin;}
+    public String getName(){return this.name;}
     public String toString(){
-        return "Product{" +"\n"+
+        return "Продукт{" +"\n"+
                 "id=" + id +"\n"+
-                "name='" + name + '\n' +
-                "manufacturer='" + vurobnuk + '\n' +
-                "zina=" + zina +"\n"+
-                "termin" + termin +"\n"+
-                "kilkist=" + kilkist +"\n"+
+                "Назва='" + name + '\n' +
+                "Виробник='" + vurobnuk + '\n' +
+                "Ціна=" + zina +"\n"+
+                "Термін придатності=" + termin +"м \n"+
+                "кількість=" + kilkist +"\n"+
                 '}';
     };
 }
